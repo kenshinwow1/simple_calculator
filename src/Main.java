@@ -1,27 +1,48 @@
 
 import java.util.Scanner;
 public class Main {
-//it's calculator123
+//it's calculator12311111
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("input number:");
+        int num1 = scanner.nextInt();
 
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Input fist number");
-        float num1 = scan.nextFloat();
-
-        System.out.println("Input second number");
-        float num2 = scan.nextFloat();
+        System.out.print("input second number:");
+        int num2 = scanner.nextInt();
 
 
- float res1 = num1 + num2;
-        float res2 = num1 - num2;
-        float res3 = num1 * num2;
-        float res4 = num1 / num2;
+        int res;
+
+        System.out.print("action:");
+        String action = scanner.nextLine();
+        action = scanner.nextLine();
+
+        switch (action) {
+            case "+":
+                res = num1 + num2;
+                System.out.println("its:" + res);
+                break;
+            case "-":
+                res = num1 - num2;
+                System.out.println("its:" + res);
+                break;
+            case "*":
+                res = num1 * num2;
+                System.out.println("its:" + res);
+                break;
+            case "/":
+                if (num2 == 0)
+                    System.out.println("Error");
+                else {
+                    res = num1 / num2;
+                    System.out.println("its:" + res);
+                }
+                    break;
+                    default:
+                        System.out.println("som wrong.");
+
+                }
 
 
-
-        System.out.println("Rresult:");
-        System.out.println(res1 + "\n" + res2 +"\n" + res3 + "\n" + res4);
+        }
     }
-
-}
