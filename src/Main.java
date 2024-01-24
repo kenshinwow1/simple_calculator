@@ -39,7 +39,7 @@ public class Main {
                 }
                     break;
                     default:
-                        System.out.println("som wrong.");
+                        System.out.println("some wrong.");
 
                 }
 
